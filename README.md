@@ -18,6 +18,7 @@ Customer segmentation is the process of dividing customers into groups based on 
 [1-Overview_Cleaning_&_EDA.ipynb](code/1-Overview_Cleaning_&_EDA.ipynb)
 
 This notebook gives an overview of the project, data cleaning of each of the 3 datasets, and initial exporatory data analysis (EDA).
+
 ![membership_month_year](images/membership_month_year.png)
 
 ### Part 2: Dataset Merging & RFM Metrics
