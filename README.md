@@ -1,4 +1,4 @@
-# Starbucks Customer Segmentation using K-Means Cluster Analysis
+# Starbucks Customer Segmentation using K-Means Clustering
 
 ## Problem Statement
 
@@ -7,8 +7,9 @@ Conducting analysis on a company’s customer base and sending personalized camp
 
 ## Executive Summary
 
-For this project I used [Starbucks customer data](https://www.kaggle.com/ihormuliar/starbucks-customer-data) that includes transactions, demographics and promotional offer data from their rewards program. Companies often do this type of deep dive customer segmentation analysis in order to better understand the purchasing habits of their customers and be able to target specific promotional deals. The dataset includes 306,534 events related to 17,000 customers and 10 event types over the course of 30 days. One of the main tasks of this project was to synthesize these three different datasets for customer segmentation analysis and a deep dive into each cluster for business insights and recommendations.
+For this project I used [Starbucks customer data](https://www.kaggle.com/ihormuliar/starbucks-customer-data) that includes transactions, demographics and promotional offer data from their rewards program. The dataset includes 306,534 events related to 17,000 customers and 10 event types over the course of a 30-days. One of the main tasks of this project is to synthesize these three different datasets and use K-Means cluster analysis to deep dive into each customer segment for business insights and recommendations.
 
+Customer segmentation is the process of dividing customers into groups based on common characteristics so companies can market and sell to each group effectively and appropriately. The goal is to maximize the value of each customer to the business. In business-to-consumer marketing, companies like Starbucks often segment customers according to demographics and spending habits. This also helps these companies communicate via the appropriate channels for the segment, which might be email, social media posts, or app notifications, depending on the customer. This helps companies also focus on the most profitable customers and potentially improve customer service and product offerings.
 
 ## Project Workflow
 
@@ -16,27 +17,28 @@ For this project I used [Starbucks customer data](https://www.kaggle.com/ihormul
 
 [1-Overview_Cleaning_&_EDA.ipynb](code/1-Overview_Cleaning_&_EDA.ipynb)
 
-This notebook gives an overview of the project, data cleaning and quality control of each of the 3 datasets, and initial exporatory data analysis (EDA).
-
-#![mias_mask](images/mias_mask.png)
+This notebook gives an overview of the project, data cleaning of each of the 3 datasets, and initial exporatory data analysis (EDA).
+![membership_month_year](images/membership_month_year.png)
 
 ### Part 2: Dataset Merging & RFM Metrics
 
-[2-Merging_&_RFM_Metrics.ipynb](code/2-Merging_&_RFM_Metrics.ipynb)
+[2-More_Preprocessing_Merging_&_RFM_Metrics.ipynb](code/2-More_Preprocessing_Merging_&_RFM_Metrics.ipynb)
 
-This notebook includes more data preprocessing, steps taken to aggregate and merge the datasets, as well as RFM (Recency, Frequency, and Monetary) Metrics calculated from the data.
+This notebook includes more data preprocessing, steps taken to aggregate and merge the datasets, as well as RFM (Recency, Frequency, and Monetary) Scores calculated from the data.
 
 ### Part 3: Cluster Analysis
 
 [3-Unsupervised_Learning_&_Clustering.ipynb](code/3-Unsupervised_Learning_&_Clustering.ipynb)
 
 This notebook includes dimensionality reduction with PCA, analysis done to find the number of clusters (k) for K-Means cluster analysis, as well as an attempt at DBSCAN that proved to be not a good application with this dataset.
+![1st_2nd_feature_space](images/1st_2nd_feature_space.png)
 
 ### Part 4: Post Hoc Analysis and Customer Insights
 
 [4-Post_Hoc_Analysis_&_Conclusions.ipynb](code/4-Post_Hoc_Analysis_&_Conclusions.ipynb)
 
 This notebook includes a post hoc analysis of the 6 clusters in order to build customer personas for each of the segments to be used for marketing and promotional purposes.
+![rfm_clusters.png](images/rfm_clusters.png)
 
 ## Recommendations
 
@@ -62,3 +64,6 @@ Clusters are separated by relevant metrics for related marketing decisions to be
 7. https://towardsdatascience.com/find-your-best-customers-with-customer-segmentation-in-python-61d602f9eee6
 8. https://www.datacamp.com/community/tutorials/introduction-customer-segmentation-python
 9. https://clevertap.com/blog/rfm-analysis/
+10. https://www.kaggle.com/regivm/rfm-analysis-tutorial
+11. https://github.com/alghsaleh/starbucks-customers-segmentation/blob/master/utilities.py
+12. https://medium.com/capillary-data-science/rfm-analysis-an-effective-customer-segmentation-technique-using-python-58804480d232
